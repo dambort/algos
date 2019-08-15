@@ -1,0 +1,42 @@
+Lista de Algoritmos a investigar, codificar, documentar….
+
+(lista en proceso de creación, clasificación, organización….)
+
+Tema: Algoritmos principiantes
+Intercambio del valor de dos variables del mismo tipo
+Menor de dos valores
+Determinar si un número entero es capícua
+
+
+Tema: Números
+Derminar si un número entero es primo.    
+Determinar los números primos en un rango determinado (Criba de Eratóstenes)
+Determinar si dos números son amigos. (Gonzalo)
+Conversión de decimal a binario, octal, hexa y viceversa
+Factorial (iterativo y recursivo)
+Fibonacci (iterativo y recursivo)
+Fibonacci por fórmula ?
+Potencia de base y exponente entero.
+Raíz Cuadrada.
+Triángulo de Pascal.
+
+Vectores
+Búsqueda secuencial de un valor 
+Búsqueda binaria
+Ordenamiento Burbuja.  
+Ordenamiento Selección
+Ordenamiento Intercambio
+Ordenamiento Mergesort
+Ordenamiento Quicksort
+Merge de dos vectores
+
+Matrices
+Multiplicación de Matrices
+
+
+Recursión:
+Torres de Hanoi
+Potencia de base y exponente entero
+Búsqueda Binaria en versión recursiva
+
+
