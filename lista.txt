@@ -9,7 +9,7 @@ Determinar si un número entero es capícua  (en construcción)
 
 
 Tema: Números
-Derminar si un número entero es primo.    
+Determinar si un número entero es primo.    
 Determinar los números primos en un rango determinado (Criba de Eratóstenes)
 Determinar si dos números son amigos. (Gonzalo)
 Conversión de decimal a binario, octal, hexa y viceversa
