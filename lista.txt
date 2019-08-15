@@ -22,13 +22,14 @@ Triángulo de Pascal.
 
 Vectores
 Búsqueda secuencial de un valor (HECHO!)
-Búsqueda binaria 
-Ordenamiento Burbuja.  
-Ordenamiento Selección
+Búsqueda binaria (Fer)
+Ordenamiento Burbuja (Fer)
+Ordenamiento Selección (Fer)
+Ordenamiento Inserción (Fer)
 Ordenamiento Intercambio
-Ordenamiento Mergesort
+Ordenamiento Mergesort (Fer)
 Ordenamiento Quicksort
-Merge de dos vectores
+Merge de dos vectores (Fer)
 
 Matrices
 Multiplicación de Matrices
