@@ -1,42 +1,42 @@
-Lista de Algoritmos a investigar, codificar, documentar….
+Lista de Algoritmos a investigar, codificar, documentarâ€¦.
 
-(lista en proceso de creación, clasificación, organización….)
+(lista en proceso de creaciÃ³n, clasificaciÃ³n, organizaciÃ³nâ€¦.)
 
 Tema: Algoritmos principiantes
-Intercambio del valor de dos variables del mismo tipo
-Menor de dos valores
-Determinar si un número entero es capícua
+Intercambio del valor de dos variables del mismo tipo (en construcciÃ³n)
+Menor de dos valores (en construcciÃ³n)
+Determinar si un nÃºmero entero es capÃ­cua  (en construcciÃ³n)
 
 
-Tema: Números
-Derminar si un número entero es primo.    
-Determinar los números primos en un rango determinado (Criba de Eratóstenes)
-Determinar si dos números son amigos. (Gonzalo)
-Conversión de decimal a binario, octal, hexa y viceversa
+Tema: NÃºmeros
+Derminar si un nÃºmero entero es primo.    
+Determinar los nÃºmeros primos en un rango determinado (Criba de EratÃ³stenes)
+Determinar si dos nÃºmeros son amigos. (Gonzalo)
+ConversiÃ³n de decimal a binario, octal, hexa y viceversa
 Factorial (iterativo y recursivo)
 Fibonacci (iterativo y recursivo)
-Fibonacci por fórmula ?
+Fibonacci por fÃ³rmula ?
 Potencia de base y exponente entero.
-Raíz Cuadrada.
-Triángulo de Pascal.
+RaÃ­z Cuadrada.
+TriÃ¡ngulo de Pascal.
 
 Vectores
-Búsqueda secuencial de un valor 
-Búsqueda binaria
+BÃºsqueda secuencial de un valor (HECHO!)
+BÃºsqueda binaria 
 Ordenamiento Burbuja.  
-Ordenamiento Selección
+Ordenamiento SelecciÃ³n
 Ordenamiento Intercambio
 Ordenamiento Mergesort
 Ordenamiento Quicksort
 Merge de dos vectores
 
 Matrices
-Multiplicación de Matrices
+MultiplicaciÃ³n de Matrices
 
 
-Recursión:
+RecursiÃ³n:
 Torres de Hanoi
 Potencia de base y exponente entero
-Búsqueda Binaria en versión recursiva
+BÃºsqueda Binaria en versiÃ³n recursiva
 
 
