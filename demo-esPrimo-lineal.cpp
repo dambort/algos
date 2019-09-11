@@ -34,12 +34,15 @@ int esPrimo(int n){
 	//Seteamos un booleano, el cual
 	//cambiaremos si es necesario durante la ejecucion
 	
-	for(int i=2;i<n;i++){
-		if(n%i==0){
-			esPrimo=false;
-			break;
-		}
+	int i=2;
+	while((n%i!=0)&&(i<n)){
+		i++;
 	}
+	if(i!=n){
+		esPrimo=false;
+	}
+	
+	
 	int retorno;
 	if(esPrimo){
 		//el numero n es primo
