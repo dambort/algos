@@ -38,11 +38,12 @@ int esPrimo(int n){
 	//Vamos a comprobar si el numero n es primo intentando dividirlo
 	//enteramente por todos los valores menores que su raiz cuadrada
 	
-	for(int i=2;i<=raizN;i++){
-		if(n%i==0){
-			esPrimo=false;
-			break;
-		}
+	int i=2;
+	while((n%i!=0)&&(i<=raizN)){
+		i++;
+	}
+	if(i!=(raizN+1)){
+		esPrimo=false;
 	}
 	
 	int retorno=0;
