@@ -13,12 +13,12 @@ int main()
 	cin >> b_entrada;
 	cout << "Ingrese la base de salida: ";
 	cin >> b_salida;
-	cout << "Introduce numero: ";
+	cout << "Introduzca el numero: ";
 	cin >> num;
 	
 	salida= convertir_base(num, b_entrada, b_salida);
 	
-	cout << endl << "numero en base " << b_salida << " es : " << salida << endl << endl;
+	cout << endl << "El numero en base " << b_salida << " es: " << salida << endl << endl;
 	
 	system("pause");
 	
