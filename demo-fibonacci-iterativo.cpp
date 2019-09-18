@@ -26,13 +26,13 @@ int fibonacci(int n){
 	int termino2=1;
 	int terminoN;
 	
-	//Para llegar al termino N que nos pasan por par·metro debemos averiguar cuales son 
+	//Para llegar al termino N que nos pasan por par√°metro debemos averiguar cuales son 
 	//los terminos (n-1) y (n-2)
 	
-	if(n==1) return 0;
-	if(n==2) return 1;
+	if(n==0) return 0;
+	if(n==1) return 1;
 	
-	for(int i=2;i<n;i++){
+	for(int i=1;i<n;i++){
 		terminoN=termino1+termino2;
 		termino1=termino2;
 		termino2=terminoN;
