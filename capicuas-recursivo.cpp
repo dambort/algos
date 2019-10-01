@@ -2,33 +2,32 @@
 
 using namespace std;
 
-unsigned long long num_reverso(unsigned long long num);
-
 bool capicua_rec(unsigned long long num)
 {
-	//la funcion compara el numero con su reverso
+	unsigned long long cont=1, aux1=num;
+	int aux2;
+	
 	//retorna true si el numero es capicua
 	// y retorna false si no lo es	
-	return (num_reverso(num)==num);
-}
-
-unsigned long long num_reverso(unsigned long long num)
-{
-	//la funcion devuelve el reverso de un numero
-	unsigned long long digitos=1, resto, cociente, aux=num;
 	
-	if (num<10) return num;		// Devuelve el ultimo digito
+	if (num<10) return true;	//Retorna "true" si es el ultimo digito, todos los numeros de un digito son capicuas
 	
 	else{
 		
-		while(aux>=10){
-			aux= aux/10;
-			digitos= digitos*10;
-		}	//se calculan los digitos del numero
+		aux2= num%10;
 		
-		resto = num % 10;
-		cociente = num / 10;
-		//se concatenan los digitos en orden inverso
-		return resto*digitos + num_reverso(cociente);	
+		while(aux1>10){
+			
+			aux1 = aux1/10;
+			cont=cont*10;
+		}	
+		
+		if (aux1==aux2){
+			
+			num= (num-(aux1*cont))/10;
+			
+			return capicua_rec(num);
+		}
+		else return false; //retorna "false" si el primer y ultimo digito no son iguales
 	}
 }
