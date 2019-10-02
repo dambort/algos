@@ -7,7 +7,7 @@ int main()
 {
 	unsigned long long num;
 	
-	cout << "Intoduzca un número para saber su reverso: ";
+	cout << "Intoduzca un numero para saber su reverso: ";
 	cin >> num;
 	
 	cout << endl << "su reverso es " << num_reverso(num)<< endl;
