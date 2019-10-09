@@ -1,4 +1,5 @@
 #include <iostream>
+#define TAM 50
 using namespace std;
 
 void seleccion(int vector[TAM],int longitud){
