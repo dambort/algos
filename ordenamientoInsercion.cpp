@@ -1,4 +1,5 @@
 #include <iostream>
+#define TAM 50
 using namespace std;
 
 void insercion(int vector[TAM],int longitud){
