@@ -1,5 +1,6 @@
-#include <iostream>
-using namespace std;
+#include "esPrimo-lineal.h"
+//#include <iostream>
+//using namespace std;
 
 int esPrimo(int n){
 	
