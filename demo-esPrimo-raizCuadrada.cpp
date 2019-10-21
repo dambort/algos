@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "esPrimo-raizCuadrada.h"
+
 using namespace std;
 
 int esPrimo(int n);
@@ -22,6 +22,9 @@ int main(void) {
 }
 
 int esPrimo(int n){
+	
+	if (n==1) return -1; // 1 no es considerado numero primo
+	
 	int raizN;
 	
 	//	Para este algoritmo nos valemos de una propiedad matematica
