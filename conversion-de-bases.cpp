@@ -1,5 +1,5 @@
 //Pasar de binario a decimal en C++
-//Conversión de decimal a binario, octal, hexa y viceversa
+//ConversiÃ³n de decimal a binario, octal, hexa y viceversa
 
 #include <iostream>
 #include <cmath>
@@ -55,8 +55,15 @@ int base_a_decimal(string num, int b_entrada)
 		
 		posicion=x-(i+1);
 		
-		if(num[posicion]<58) aux=num[posicion]-48;
-		else aux=num[posicion]-87;
+		if(num[posicion]<58) aux=num[posicion]-48; //si es un sumero asigno su valor entero
+		else if(num[posicion]>=64 && num[posicion]<=90) aux=num[posicion]-55; //si es una mayuscula ej: A=65ascii-55=10
+		else aux=num[posicion]-87;	//si es una minucula ej: a=97ascii-87=10
+		
+		if(aux>=b_entrada){	//si se ingresa un numero que no pertenece a la base de entrada
+			
+			cout << "ERROR: el numero ingresado no pertenece a la base de entrada" << endl;
+			return 0;
+		}
 		
 		if(i==0) sum = aux;
 		else if(i==1) sum += aux * pot;
