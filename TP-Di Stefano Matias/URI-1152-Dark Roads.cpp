@@ -40,7 +40,7 @@ struct Ar{int a,b,w;};
 bool operator<(const Ar& a, const Ar &b){return a.w<b.w;}
 vector<Ar> E;
 int n;
-// Minimun Spanning Tree in O(e log e)
+
 long long kruskal(){
 	ll cost=0;
 	sort(E.begin(), E.end());//ordenar aristas de menor a mayor
@@ -54,61 +54,6 @@ long long kruskal(){
 		return cost;
 }
 
-//map<int, vector<Arco>> arcosPorPeso;
-/*void kruskal(unsigned long &ahorro){
-	
-	
-	while(!arcosPorPeso.empty()){
-		
-		vector<Arco> arquitos=(*(arcosPorPeso.begin())).second; //Tomo los arcos con el menor peso (pueden ser varios arcos del mismo peso)
-		while(!arquitos.empty()){ //Los proceso a todos
-			
-			Arco procesar= arquitos.back(); //Tomo el ultimo
-			arquitos.pop_back(); //y lo borro
-			bool origenEncontrado=false, endEncontrado=false;
-			set<set<int>>::iterator bosqueOrigen, bosqueEnd;
-			for(set<set<int>>::iterator iter=bosques.begin(); iter!=bosques.end() && (!origenEncontrado || !endEncontrado); iter++){ //Recorro todos los bosques hasta que haya encontrado a los dos
-				
-				if((!origenEncontrado) && ((*iter).find(procesar.origen)!=(*iter).end())){ //Si este bosque tiene al origen del arco
-					//Unir bosques
-					
-					bosqueOrigen=iter;
-					origenEncontrado=true;
-					
-				}
-				if((!endEncontrado) && ((*iter).find(procesar.end)!=(*iter).end())){ //Si este bosque tiene al end del arco
-					bosqueEnd=iter;
-					endEncontrado=true;
-					
-				}
-			}
-			//Ya encontre los bosques en los que estan el origen y fin del arco procesar
-			
-			if(*bosqueOrigen!=*bosqueEnd){ //Si los nodos no estan en el mismo bosque
-				//Es un arco importante que va a estar en el bosque final
-				//Asi que sumo su peso
-				
-				ahorro+=procesar.peso;
-				//Unir los bosques
-				set<int> aux;
-				aux.insert((*bosqueOrigen).begin(), (*bosqueOrigen).end());
-				aux.insert((*bosqueEnd).begin(), (*bosqueEnd).end());
-				bosques.erase(bosqueOrigen);
-				bosques.erase(bosqueEnd);
-				bosques.insert(aux);
-				
-			}
-			
-		}
-		
-		arcosPorPeso.erase(arcosPorPeso.begin());
-		
-		
-	}
-	
-	
-}*/	
-	
 
 int main() {
 	
