@@ -12,30 +12,6 @@ struct Grafo{
 
 vector<bool> descubiertos;
 
-
-/*
-void dfs(int start){
-	//Procesa en postorden si es un arbol
-	//Ademas, si es un arbol, se puede escribir mucho mas facil esto
-	//(No hay que verificar si ya pasaste)
-	//cout<<"TAMANIO DESCUBIERTOS: "<<descubiertos.size()<<endl;
-	cout<<"Se rompe el stack??????????????"<<endl;
-	cout<<"Se ejecuta dfs con: "<<start<<endl;
-	descubiertos[start]=true;
-	if(grafo.arcos[start].size()!=1){
-		for(unsigned i=0; i<grafo.arcos[start].size(); i++){
-			if(!descubiertos[grafo.arcos[start][i]]){
-				dfs(grafo.arcos[start][i]);
-			}
-		}
-	}
-	else{
-		int nodito=start;
-		while(grafo.arcos[nodito].size()==1
-	}
-	
-}*/
-
 void bfs(int start){
 	queue<int> fila; //Fila de procesamiento
 	
@@ -52,24 +28,10 @@ void bfs(int start){
 				descubiertos[grafo.arcos[nodo][i]]=true; //Agrego el nodo hijo de nodo como descubierto
 			}
 		}
-		
 	}
 	
-	
 }
-
-void mostrar_grafo(){
 	
-	for(int i=0; i<grafo.arcos.size(); i++){
-		for(int j=0; j<grafo.arcos[i].size(); j++){
-			assert(grafo.arcos[i][j]<grafo.cantNodos);
-			grafo.arcos[i];
-			grafo.arcos[i][j];
-			cout<<"( "<<i<<" --> "<<grafo.arcos[i][j]<<" )"<<endl;
-			
-		}
-	} 
-}	
 
 int main() {
 	ios::sync_with_stdio(false);
@@ -103,16 +65,12 @@ int main() {
 				
 				switch(input){
 				case 'H':
-					assert(grafo.cantNodos > nodoAct &&
-						   grafo.cantNodos > nodoAb);
 					grafo.arcos[nodoAct].push_back(nodoDer);
 					grafo.arcos[nodoDer].push_back(nodoAct);
 					grafo.arcos[nodoAb].push_back(nodoAbder);
 					grafo.arcos[nodoAbder].push_back(nodoAb);
 					break;
 				case 'V':
-					assert(grafo.cantNodos > nodoAct &&
-						   grafo.cantNodos > nodoDer);
 					grafo.arcos[nodoAct].push_back(nodoAb);
 					grafo.arcos[nodoAb].push_back(nodoAct);
 					grafo.arcos[nodoDer].push_back(nodoAbder);
@@ -150,11 +108,6 @@ int main() {
 			}
 		}
 		//cout<<"---------- FIN CONECT PRI Y ULT COLUMNA..."<<endl;
-		//Y conectar las esquinas
-		
-		
-		
-		//mostrar_grafo();
 		
 		bfs(0);
 		int cantCerrados=0;
